@@ -1,0 +1,19 @@
+.modal-main-menu {
+   &__inner {
+      @apply mt-3 pl-3.5;
+
+      h3 {
+         @apply text-xl font-semibold capitalize text-gray-600;
+      }
+
+      ion-item {
+         --padding-start: 0px;
+         @apply text-gray-500;
+
+         ion-label {
+            @apply pl-3.5;
+            @apply capitalize;
+         }
+      }
+   }
+}

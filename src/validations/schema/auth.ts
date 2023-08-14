@@ -1,18 +1,24 @@
 import { object } from 'yup'
-import { email, password, confirmPassword, name, phone_number } from '../index'
+import {
+  email,
+  password,
+  confirmPassword as confirm_password,
+  name,
+  phone_number,
+} from '../index'
 
 export const register = object().shape(
   {
     email,
     password,
-    confirmPassword,
+    confirm_password,
     name,
     phone_number,
   },
   [
     ['email', 'email'],
     ['password', 'password'],
-    ['confirmPassword', 'confirmPassword'],
+    ['confirm_password', 'confirm_password'],
     ['name', 'name'],
     ['phone_number', 'phone_number'],
   ]

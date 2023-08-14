@@ -25,7 +25,6 @@ export const validate = async (
     })
 }
 
-
 export const email = string()
   .email('Email tidak valid.')
   .trim()

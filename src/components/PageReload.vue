@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { IonFab, IonFabButton } from '@ionic/vue'
+import terminal from 'virtual:terminal';
 import { computed } from 'vue'
 import { refresh } from '../utils/svg'
 import CustomIcon from './Icon.vue'
@@ -10,6 +11,7 @@ function reloadPage() {
 
 const checkMode = computed(() => {
   const mode = import.meta.env.VITE_CHECKMODE
+  terminal.log(mode)
   return mode == 'development' ? true : false
 })
 </script>

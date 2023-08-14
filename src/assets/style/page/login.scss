@@ -11,9 +11,12 @@
          }
 
          form {
-            @apply flex flex-col gap-4;
+            @apply flex flex-col gap-2;
             @apply mx-10 mt-16;
-            // @apply bg-red-200;
+
+            .submit-button {
+              @apply w-full mt-6;
+            }
          }
       }
    }

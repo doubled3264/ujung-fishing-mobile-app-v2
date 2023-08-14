@@ -1,0 +1,16 @@
+.register-page {
+   ion-content {
+      & > .inner {
+         @apply mt-10;
+
+         form {
+            @apply flex flex-col gap-2;
+            @apply mx-4;
+
+            .submit-button {
+               @apply w-full mt-6;
+            }
+         }
+      }
+   }
+}

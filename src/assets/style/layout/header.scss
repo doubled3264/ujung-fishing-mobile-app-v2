@@ -1,7 +1,12 @@
-.login-page {
+.login-page,
+.register-page,
+.home-page,
+.customer-add-page,
+.customer-list-page,
+.modal-main-menu {
    ion-header {
       @apply mt-9;
-      @apply border-b border-gray-300;
+      // @apply border-b border-gray-300;
       ion-toolbar {
          --background: #fff;
          @apply text-gray-500;
@@ -13,8 +18,8 @@
    }
 }
 
-// .home-page {
-.login-page {
+.login-page,
+.home-page {
    ion-header {
       @apply px-2.5;
    }

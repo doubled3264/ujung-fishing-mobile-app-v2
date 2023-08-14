@@ -1,8 +1,13 @@
 @import './layout/header.scss';
 
+@import './component/modal/main-menu.scss';
+
 @import './component/input.scss';
+@import './component/button.scss';
+@import './component/searchbar.scss';
 
 @import './page/login.scss';
+@import './page/register.scss';
 
 @tailwind base;
 @tailwind components;

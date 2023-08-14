@@ -6,6 +6,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './routes'
 import store from './store/'
+import * as axiosAuth from './middleware/auth'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css'
@@ -34,11 +35,12 @@ import './assets/style/index.scss'
 // await StatusBar.setBackgroundColor({ color: '#fff' })
 
 const app = createApp(App)
-  .use(IonicVue)
-  .use(router)
-  .use(store)
-  .use(VueSweetalert2)
+axiosAuth.start()
+app.use(IonicVue)
+app.use(router)
+app.use(store)
+app.use(VueSweetalert2)
 
 router.isReady().then(() => {
-  app.mount('#app')
+   app.mount('#app')
 })
