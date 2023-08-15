@@ -1,0 +1,46 @@
+ion-modal.modal-import-contact {
+   ion-header {
+      ion-toolbar {
+         --padding-start: 4px;
+         @apply rounded-tl-xl rounded-tr-2xl;
+         @apply text-gray-500;
+      }
+   }
+
+   &::part(backdrop) {
+      /* background: rgba(209, 213, 219); */
+      background: black;
+      --backdrop-opacity: 0.9;
+   }
+   &::part(content) {
+      background: transparent;
+   }
+}
+
+.modal-import-contact {
+   ion-list {
+      @apply h-fit;
+   }
+   ion-item:last-of-type {
+      @apply mb-56;
+   }
+   &__item {
+      @apply flex justify-between;
+      @apply w-full my-2 py-2.5 px-2.5;
+      @apply rounded-lg border-2 border-gray-200;
+   }
+   &__info {
+      h3 {
+         @apply text-base font-medium text-gray-500;
+      }
+
+      p {
+         @apply flex gap-2 items-center;
+         @apply text-sm text-gray-500;
+      }
+   }
+   &__nav {
+      @apply mt-3 mr-2;
+      @apply text-gray-500;
+   }
+}

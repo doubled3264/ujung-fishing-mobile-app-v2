@@ -1,13 +1,18 @@
 .modal-main-menu {
    &__inner {
-      @apply mt-3 pl-3.5;
+      // @apply mt-3 pl-3.5;
+      @apply mt-3;
 
       h3 {
+         @apply ml-3.5;
          @apply text-xl font-semibold capitalize text-gray-600;
       }
 
       ion-item {
          --padding-start: 0px;
+         --inner-padding-start: 14px;
+         --color-hover: rgb(107 114 128);
+         --background-hover: none;
          @apply text-gray-500;
 
          ion-label {

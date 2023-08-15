@@ -42,5 +42,5 @@ app.use(store)
 app.use(VueSweetalert2)
 
 router.isReady().then(() => {
-   app.mount('#app')
+  app.mount('#app')
 })

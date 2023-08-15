@@ -6,7 +6,9 @@
 .modal-main-menu {
    ion-header {
       @apply mt-9;
-      // @apply border-b border-gray-300;
+      @apply border-b border-gray-50;
+      @apply shadow-sm #{!important};
+
       ion-toolbar {
          --background: #fff;
          @apply text-gray-500;

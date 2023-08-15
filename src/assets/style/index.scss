@@ -1,6 +1,8 @@
 @import './layout/header.scss';
 
+@import './component/modal/customer/import-contact.scss';
 @import './component/modal/main-menu.scss';
+@import './component/modal/option.scss';
 
 @import './component/input.scss';
 @import './component/button.scss';
@@ -8,6 +10,8 @@
 
 @import './page/login.scss';
 @import './page/register.scss';
+@import './page/customer-add.scss';
+@import './page/customer-list.scss';
 
 @tailwind base;
 @tailwind components;
