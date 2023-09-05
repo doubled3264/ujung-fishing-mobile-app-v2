@@ -21,7 +21,7 @@ const loginForm = ref({
 })
 
 onIonViewDidEnter(() => {
-  terminal.log('base login')
+  terminal.log('[base login]')
 })
 
 async function validateInput(field: keyof LoginFormErrorState) {

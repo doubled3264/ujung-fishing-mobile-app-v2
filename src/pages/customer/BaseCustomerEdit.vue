@@ -4,14 +4,12 @@ import {
    IonContent,
    IonButton,
    onIonViewDidEnter,
-   onIonViewDidLeave,
 } from '@ionic/vue'
 import { ref, toRef } from 'vue'
 import { useStore } from 'vuex'
 import { useRoute } from 'vue-router'
 import { ContactEditForm as ContactEditFormErrorState } from '../../interfaces/error-state/contact'
-import { phoneBook, arrowLeft } from '../../utils/svg'
-import { useToggleComponent } from '../../composable/toggle-show-hide-component'
+import {  arrowLeft } from '../../utils/svg'
 import { goToPage } from '../../routes'
 import { contactEditForm as contactEditFormErrorState } from '../../validations/error-state/contact'
 import * as formValidation from '../../validations'
@@ -27,7 +25,6 @@ import terminal from 'virtual:terminal'
 const store = useStore()
 const route = useRoute()
 const { errorState } = contactEditFormErrorState()
-const modalImportContactState = useToggleComponent()
 const customerEditForm = ref({
    name: '',
    phone_number: '',

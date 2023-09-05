@@ -54,7 +54,6 @@ export const goToPage = (
    args: { replace: boolean } = { replace: false }
 ) => {
    const { replace } = args
-   terminal.log(replace)
    router.push({ path, replace })
 }
 

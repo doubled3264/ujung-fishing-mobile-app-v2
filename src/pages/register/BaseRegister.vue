@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { IonPage, IonContent, IonButton, onIonViewDidLeave } from '@ionic/vue'
+import { IonPage, IonContent, IonButton ,onIonViewDidEnter} from '@ionic/vue'
 import { ref, toRef } from 'vue'
 import { useStore } from 'vuex'
+import terminal from 'virtual:terminal'
 import { RegisterForm as RegisterFormErrorState } from '../../interfaces/error-state/auth'
 import { registerForm as registerFormErrorState } from '../../validations/error-state/auth'
 import { goToPage } from '../../routes/'
@@ -26,6 +27,9 @@ const registerForm = ref({
   phone_number: '',
 })
 
+onIonViewDidEnter(() => {
+  terminal.log('[base register]')
+})
 async function validateInput(field: keyof RegisterFormErrorState) {
   await formValidation.validate(
     toRef(registerForm, 'value'),
@@ -55,13 +59,13 @@ function validateForm() {
 async function registerAction() {
   const payload = {
     ...omit(registerForm.value, 'confirm_password'),
-    invitation_token: '01H74WPGVD75FE0D1NF91K1BK8',
+    invitation_token: '01H8F3MPFNB8601F2JD1SXND48',
   }
   await store
     .dispatch('auth/register', payload)
     .then(() => {
       sweetalertDialog.success('Pendaftaran berhasil.')
-      goToPage('/login')
+      goToPage('/login', {replace:true})
     })
     .catch((err) => {
       const message = err.response.data.message

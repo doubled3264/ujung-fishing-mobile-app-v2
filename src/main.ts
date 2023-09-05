@@ -30,10 +30,6 @@ import './theme/variables.css'
 /* custom style */
 import './assets/style/index.scss'
 
-// await StatusBar.setOverlaysWebView({ overlay: true })
-// await StatusBar.setStyle({ style: Style.Light })
-// await StatusBar.setBackgroundColor({ color: '#fff' })
-
 const app = createApp(App)
 axiosAuth.start()
 app.use(IonicVue)
@@ -41,6 +37,9 @@ app.use(router)
 app.use(store)
 app.use(VueSweetalert2)
 
+// await StatusBar.setOverlaysWebView({ overlay: true })
+// await StatusBar.setStyle({ style: Style.Light })
+
 router.isReady().then(() => {
-  app.mount('#app')
+   app.mount('#app')
 })

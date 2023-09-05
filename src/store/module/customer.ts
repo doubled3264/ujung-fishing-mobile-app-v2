@@ -39,7 +39,6 @@ export default {
           console.log(err)
         })
     },
-    asyn 
       async add({ }, credentials: any) {
       return new Promise((resolve, reject) => {
         axios

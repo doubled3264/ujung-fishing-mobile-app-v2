@@ -2,6 +2,7 @@
 import {
   IonModal,
   IonHeader,
+  IonToolbar,
   IonContent,
   IonList,
   IonItem,
@@ -14,7 +15,7 @@ import { nextTick, ref } from 'vue'
 import { cloneDeep } from 'lodash'
 import { Contacts } from '@capacitor-community/contacts'
 import { ContactProjection } from '../../../interfaces/contact'
-import { cross, phone, userAdd, plus } from '../../../utils/svg'
+import { cross, phone, plus } from '../../../utils/svg'
 import CustomSearchbar from '../../Searchbar.vue'
 import CustomIcon from '../../Icon.vue'
 

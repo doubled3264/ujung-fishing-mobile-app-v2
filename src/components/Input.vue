@@ -4,7 +4,6 @@ import { computed, ref, watch } from 'vue'
 import { eye, eyeStriped } from '../utils/svg'
 import CustomIcon from './Icon.vue'
 import { useToggleComponent } from '../composable/toggle-show-hide-component'
-import terminal from 'virtual:terminal'
 interface Props {
    label: string
    inputValue: string

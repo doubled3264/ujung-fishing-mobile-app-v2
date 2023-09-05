@@ -2,16 +2,12 @@
 import {
    IonPage,
    IonContent,
-   IonHeader,
-   IonToolbar,
    IonButton,
    onIonViewDidEnter,
-   onIonViewDidLeave,
 } from '@ionic/vue'
 import { ref } from 'vue'
 import { useStore } from 'vuex'
 import { find } from 'lodash'
-import terminal from 'virtual:terminal'
 import { ContactListAPI } from '../../../interfaces/contact'
 import { goToPage } from '../../../routes/'
 import { useToggleComponent } from '../../../composable/toggle-show-hide-component'
@@ -90,7 +86,7 @@ function editCustomer() {
             </ion-button>
          </template>
          <template #nav-end>
-            <ion-button @click="goToPage('/customer/add')">
+           <ion-button @click="goToPage('/customer/add', {replace:true})">
                <custom-icon :svg-icon="userAdd" width="24"></custom-icon>
             </ion-button>
             <ion-button @click="modalMainMenuState.toggling">

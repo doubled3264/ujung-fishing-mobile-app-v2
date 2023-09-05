@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IonPage, IonContent, IonButton, onIonViewDidLeave } from '@ionic/vue'
+import { IonPage, IonContent, IonButton } from '@ionic/vue'
 import { ref, toRef } from 'vue'
 import { useStore } from 'vuex'
 import { ContactAddForm as ContactAddFormErrorState } from '../../interfaces/error-state/contact'
@@ -17,7 +17,6 @@ import CustomPageReload from '../../components/PageReload.vue'
 import CustomModalImportContact from '../../components/modal/customer/ImportContact.vue'
 import CustomInput from '../../components/Input.vue'
 import CustomButton from '../../components/Button.vue'
-import terminal from 'virtual:terminal'
 
 const store = useStore()
 const { errorState } = contactAddFormErrorState()
