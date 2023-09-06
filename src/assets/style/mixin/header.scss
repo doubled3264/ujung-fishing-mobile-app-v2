@@ -1,5 +1,4 @@
-.home-page {
-   ion-header {
+@mixin header {
       @apply mt-9;
       @apply border-b border-gray-50;
       @apply shadow-sm #{!important};
@@ -12,11 +11,5 @@
             @apply capitalize text-gray-600;
          }
       }
-   }
-}
 
-.home-page {
-   ion-header {
-      @apply px-2.5;
-   }
 }

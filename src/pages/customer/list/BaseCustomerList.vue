@@ -1,17 +1,12 @@
 <script setup lang="ts">
-import {
-   IonPage,
-   IonContent,
-   IonButton,
-   onIonViewDidEnter,
-} from '@ionic/vue'
+import { IonPage, IonContent, IonButton, onIonViewDidEnter } from '@ionic/vue'
 import { ref } from 'vue'
 import { useStore } from 'vuex'
 import { find } from 'lodash'
 import { ContactListAPI } from '../../../interfaces/contact'
 import { goToPage } from '../../../routes/'
 import { useToggleComponent } from '../../../composable/toggle-show-hide-component'
-import { arrowLeft, userAdd, burgerMenu2 } from '../../../utils/svg'
+import { arrowLeft, burgerMenu2, plus } from '../../../utils/svg'
 import * as sweetalertDialog from '../../../utils/sweetalert-dialog'
 import CustomerItem from './CustomerItem.vue'
 import SkeletonCustomerItem from './SkeletonCustomerItem.vue'
@@ -86,8 +81,8 @@ function editCustomer() {
             </ion-button>
          </template>
          <template #nav-end>
-           <ion-button @click="goToPage('/customer/add', {replace:true})">
-               <custom-icon :svg-icon="userAdd" width="24"></custom-icon>
+            <ion-button @click="goToPage('/customer/add', { replace: true })">
+               <custom-icon :svg-icon="plus" width="24"></custom-icon>
             </ion-button>
             <ion-button @click="modalMainMenuState.toggling">
                <custom-icon :svg-icon="burgerMenu2" width="26"></custom-icon>

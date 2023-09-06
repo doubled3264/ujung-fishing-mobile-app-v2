@@ -1,4 +1,9 @@
+@import '../mixin/header.scss';
+
 .customer-list-page {
+  ion-header {
+    @include header;
+  }
    &__item {
       @apply flex justify-between;
       @apply w-full my-2 py-2.5 pl-2.5;

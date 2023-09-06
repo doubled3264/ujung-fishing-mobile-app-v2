@@ -1,9 +1,9 @@
-@import '../mixin/header.scss';
+@import '../header.scss';
 
-.register-page {
-  ion-header {
-    @include header;
-  }
+@mixin customer-page {
+   ion-header {
+      @include header;
+   }
    ion-content {
       & > .inner {
          @apply mt-10;

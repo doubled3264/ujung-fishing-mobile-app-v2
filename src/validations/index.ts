@@ -46,3 +46,7 @@ export const phone_number = string()
   .max(13, 'Maksimal 13 karakter.')
   .required()
   .typeError('No telepon tidak valid.')
+
+export const commonString = (errorMessage: string) => {
+  return string().trim().required(errorMessage)
+}

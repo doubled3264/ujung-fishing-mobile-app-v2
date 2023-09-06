@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import {
-   IonPage,
-   IonContent,
-   IonButton,
-   onIonViewDidEnter,
-} from '@ionic/vue'
+import { IonPage, IonContent, IonButton, onIonViewDidEnter } from '@ionic/vue'
 import { ref, toRef } from 'vue'
 import { useStore } from 'vuex'
 import { useRoute } from 'vue-router'
 import { ContactEditForm as ContactEditFormErrorState } from '../../interfaces/error-state/contact'
-import {  arrowLeft } from '../../utils/svg'
+import { arrowLeft } from '../../utils/svg'
 import { goToPage } from '../../routes'
 import { contactEditForm as contactEditFormErrorState } from '../../validations/error-state/contact'
 import * as formValidation from '../../validations'

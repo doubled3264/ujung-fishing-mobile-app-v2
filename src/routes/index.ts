@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from '@ionic/vue-router'
 import { includes, last } from 'lodash'
 import store from '../store'
 import publicRoute from './public'
-import privateRoute from './private'
+import privateRoute from './private/'
 import terminal from 'virtual:terminal'
 
 const router = createRouter({
@@ -11,6 +11,7 @@ const router = createRouter({
 })
 
 router.beforeEach(async (to, _from, next) => {
+   console.log(to)
    let isAuthenticated = false
    let role = ''
    let isPublic = last(to.matched)!.meta.public

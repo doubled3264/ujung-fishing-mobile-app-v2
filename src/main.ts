@@ -41,5 +41,5 @@ app.use(VueSweetalert2)
 // await StatusBar.setStyle({ style: Style.Light })
 
 router.isReady().then(() => {
-   app.mount('#app')
+  app.mount('#app')
 })

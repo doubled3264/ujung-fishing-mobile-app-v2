@@ -1,0 +1,7 @@
+@import '../mixin/header.scss';
+
+.brand-list-page {
+   ion-header {
+      @include header;
+   }
+}

@@ -81,7 +81,7 @@ async function saveContactAction() {
 <template>
    <ion-page class="customer-add-page">
       <custom-page-reload />
-      <custom-header title="tambah data pelanggan">
+      <custom-header title="tambah pelanggan baru">
          <template #nav-start>
             <ion-button @click="goToPage('/customer', { replace: true })">
                <custom-icon :svg-icon="arrowLeft" width="24"></custom-icon>

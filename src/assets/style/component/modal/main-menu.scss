@@ -1,4 +1,7 @@
+@import '../../mixin/header.scss';
+
 .modal-main-menu {
+   @include header;
    &__inner {
       // @apply mt-3 pl-3.5;
       @apply mt-3;
