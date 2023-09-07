@@ -1,5 +1,11 @@
-@import '../mixin/page/customer.scss';
+@import '../mixin/header.scss';
+@import '../mixin/form.scss';
 
 .customer-edit-page {
-   @include customer-page;
+  ion-header {
+    @include header;
+  }
+   ion-content {
+     @include form;
+   }
 }

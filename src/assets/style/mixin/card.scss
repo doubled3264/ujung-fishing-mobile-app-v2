@@ -1,0 +1,5 @@
+@mixin card-item {
+   @apply flex justify-between;
+   @apply w-full my-2 py-2.5 pl-2.5;
+   @apply rounded-lg border-2 border-gray-200;
+}

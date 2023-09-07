@@ -1,7 +1,22 @@
 @import '../mixin/header.scss';
+@import '../mixin/card.scss';
 
 .brand-list-page {
    ion-header {
       @include header;
+   }
+
+   &__item {
+      @include card-item;
+
+      .content {
+         p {
+            @apply text-lg font-medium capitalize text-gray-500;
+         }
+      }
+      .nav {
+         @apply mt-0.5 mr-1;
+         @apply text-gray-500;
+      }
    }
 }

@@ -7,6 +7,8 @@
 @import './component/input.scss';
 @import './component/button.scss';
 @import './component/searchbar.scss';
+@import './component/select-box.scss';
+@import './component/select-box-brand.scss';
 
 @import './page/login.scss';
 @import './page/register.scss';
@@ -15,6 +17,7 @@
 @import './page/customer-edit.scss';
 @import './page/brand-list.scss';
 @import './page/brand-add.scss';
+@import './page/product-add.scss';
 
 @tailwind base;
 @tailwind components;

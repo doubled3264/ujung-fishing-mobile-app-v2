@@ -11,7 +11,13 @@ const product: RouteRecordRaw[] = [
          {
             path: '',
             name: 'product list',
-            component: () => import('../../pages/product/ProductList.vue'),
+            component: () => import('../../pages/product/BaseProductList.vue'),
+            meta: { public: false, role: ['super', 'admin'] },
+         },
+         {
+            path: 'add',
+            name: 'product add',
+            component: () => import('../../pages/product/BaseProductAdd.vue'),
             meta: { public: false, role: ['super', 'admin'] },
          },
          ...brand,

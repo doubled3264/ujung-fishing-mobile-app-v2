@@ -1,0 +1,77 @@
+.custom-selectbox {
+   height: 70px;
+   @apply relative;
+   @apply my-0.5 px-0;
+   // @apply bg-yellow-300;
+
+   &__label {
+      @apply absolute -top-2 left-2.5 z-10 opacity-100;
+      @apply px-0.5;
+      @apply text-sm text-gray-400;
+      @apply bg-white;
+   }
+
+   &__inner {
+      @apply px-3 pb-2.5 pt-3;
+      @apply border rounded-lg border-gray-300;
+
+      p {
+         @apply font-normal;
+         @apply text-gray-500;
+      }
+   }
+
+   &__nav {
+      @apply absolute top-1.5 right-3 z-10;
+      @apply cursor-pointer;
+      @apply p-2;
+      @apply text-gray-400;
+      @apply rotate-90;
+   }
+}
+ion-modal.modal-selectbox {
+   ion-header {
+      ion-toolbar {
+         @apply h-12;
+         --padding-start: 4px;
+         @apply rounded-tl-xl rounded-tr-2xl;
+         @apply text-gray-500;
+         ion-title {
+            @apply px-2;
+            @apply text-xl  capitalize text-gray-500;
+         }
+      }
+   }
+
+   ion-list {
+      ion-item {
+         --padding-start: 0px;
+         --padding-end: 0px;
+         --padding-top: 0px;
+         --padding-bottom: 0px;
+         @apply mx-4;
+         .custom-selectbox__item {
+            @apply relative overflow-hidden;
+            @apply w-full pl-3 py-4;
+            @apply border-b;
+            &.selected {
+               @apply rounded-lg bg-lapis-lazuli-normal;
+               p {
+                  @apply text-white;
+               }
+            }
+         }
+         p {
+            @apply font-medium capitalize text-gray-500;
+         }
+      }
+   }
+
+   &::part(backdrop) {
+      background: black;
+      --backdrop-opacity: 1.1;
+   }
+   &::part(content) {
+      background: transparent;
+   }
+}

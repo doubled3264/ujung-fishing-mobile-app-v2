@@ -1,13 +1,28 @@
 @import '../mixin/header.scss';
+@import '../mixin/card.scss';
 
 .customer-list-page {
-  ion-header {
-    @include header;
-  }
+   ion-header {
+      @include header;
+   }
    &__item {
-      @apply flex justify-between;
-      @apply w-full my-2 py-2.5 pl-2.5;
-      @apply rounded-lg border-2 border-gray-200;
+      @include card-item;
+
+      & > .content {
+         h3 {
+            @apply text-lg font-medium text-gray-500;
+         }
+
+         p {
+            @apply flex gap-2 items-center;
+            @apply text-gray-500;
+         }
+      }
+
+      & > .nav {
+         @apply mt-2 mr-1;
+         @apply text-gray-500;
+      }
 
       &.skeleton {
          @apply flex flex-col gap-1.5;
@@ -24,19 +39,5 @@
             @apply w-4/5;
          }
       }
-   }
-   &__info {
-      h3 {
-         @apply text-lg font-medium text-gray-500;
-      }
-
-      p {
-         @apply flex gap-2 items-center;
-         @apply text-gray-500;
-      }
-   }
-   &__nav {
-      @apply mt-2 mr-1;
-      @apply text-gray-500;
    }
 }

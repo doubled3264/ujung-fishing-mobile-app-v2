@@ -21,20 +21,11 @@ const customer: RouteRecordRaw[] = [
             meta: { public: false, role: ['super', 'admin'] },
          },
          {
-            path: 'edit',
+            path: 'edit/:customerId',
             name: 'customer edit',
             component: () =>
-               import('../../pages/customer/edit/BaseCustomerEdit.vue'),
+               import('../../pages/customer/BaseCustomerEdit.vue'),
             meta: { public: false, role: ['super', 'admin'] },
-            children: [
-               {
-                  path: ':customerId',
-                  name: 'customer edit',
-                  component: () =>
-                     import('../../pages/customer/edit/CustomerEdit.vue'),
-                  meta: { public: false, role: ['super', 'admin'] },
-               },
-            ],
          },
       ],
    },

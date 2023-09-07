@@ -1,10 +1,4 @@
-@import '../header.scss';
-
-@mixin customer-page {
-   ion-header {
-      @include header;
-   }
-   ion-content {
+@mixin  form {
       & > .inner {
          @apply mt-10;
 
@@ -17,5 +11,4 @@
             }
          }
       }
-   }
 }

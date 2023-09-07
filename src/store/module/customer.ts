@@ -36,9 +36,7 @@ export default {
             .then((response) => {
                commit('setAll', response.data.data)
             })
-            .catch((err) => {
-               console.log(err)
-            })
+            .catch((err) => {})
       },
       async add({}, credentials: any) {
          return new Promise((resolve, reject) => {

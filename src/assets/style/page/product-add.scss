@@ -1,11 +1,12 @@
 @import '../mixin/header.scss';
 @import '../mixin/form.scss';
 
-.customer-add-page {
-  ion-header {
-    @include header;
-  }
+.product-add-page {
+   ion-header {
+      @include header;
+   }
+
    ion-content {
-     @include form;
+      @include form;
    }
 }

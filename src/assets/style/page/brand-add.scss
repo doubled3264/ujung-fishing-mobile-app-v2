@@ -1,7 +1,12 @@
 @import '../mixin/header.scss';
+@import '../mixin/form.scss';
+
 
 .brand-add-page {
    ion-header {
       @include header;
+   }
+   ion-content {
+     @include form;
    }
 }

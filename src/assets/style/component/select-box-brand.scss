@@ -1,0 +1,65 @@
+.custom-select-box-brand {
+   @apply relative;
+
+   label {
+      @apply absolute -top-2 left-2.5 z-10 opacity-100;
+      @apply px-1;
+      @apply text-sm text-gray-400;
+      @apply bg-white;
+   }
+   & > .inner {
+      padding: 11px 12px;
+      @apply border rounded-lg border-gray-300;
+      p {
+         @apply text-gray-500;
+      }
+   }
+}
+ion-modal.modal-select-box-brand {
+   ion-header {
+      ion-toolbar {
+         --padding-start: 4px;
+         @apply rounded-tl-xl rounded-tr-2xl;
+         @apply text-gray-500;
+         ion-title {
+            @apply px-2;
+            @apply text-xl  capitalize text-gray-500;
+         }
+      }
+   }
+
+   ion-list {
+      ion-item {
+         --padding-start: 0px;
+         --inner-padding-top: 18px;
+         --inner-padding-bottom: 18px;
+         --color-hover: rgb(107 114 128);
+         // --color-hover: red;
+         --background-hover: none;
+         @apply mx-4;
+         @apply border-b;
+         @apply overflow-hidden relative;
+         p {
+            @apply font-medium capitalize text-gray-500;
+         }
+
+         &.serch-not-found {
+            @apply border-none;
+            ion-label {
+               p {
+                  @apply text-lg font-medium capitalize text-gray-500;
+               }
+            }
+         }
+      }
+   }
+
+   &::part(backdrop) {
+      /* background: rgba(209, 213, 219); */
+      background: black;
+      --backdrop-opacity: 0.9;
+   }
+   &::part(content) {
+      background: transparent;
+   }
+}

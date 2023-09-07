@@ -9,6 +9,7 @@ defineProps<Props>()
 const emit = defineEmits(['onChange'])
 
 function inputChange(ev: any) {
+   console.log('inputChange fire')
    emit('onChange', ev)
 }
 </script>
@@ -18,7 +19,7 @@ function inputChange(ev: any) {
          class=""
          show-clear-button="focus"
          :debounce="800"
-         @ionChange="inputChange"
+         @ion-input="inputChange"
          :placeholder="placeholder"
       >
       </ion-searchbar>

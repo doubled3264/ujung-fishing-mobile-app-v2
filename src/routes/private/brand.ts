@@ -10,7 +10,7 @@ const brand: RouteRecordRaw[] = [
       {
         path: '',
         name: 'brand list',
-        component: () => import('../../pages/brand/BrandList.vue'),
+        component: () => import('../../pages/brand/list/BaseBrandList.vue'),
         meta: { public: false, role: ['super', 'admin'] },
       },
       {
@@ -18,7 +18,13 @@ const brand: RouteRecordRaw[] = [
         name: 'brand add',
         component: () => import('../../pages/brand/BrandAdd.vue'),
         meta: { public: false, role: ['super', 'admin'] },
-      }
+      },
+      {
+        path: 'edit/:brandId',
+        name: 'brand edit',
+        component: () => import('../../pages/brand/BrandEdit.vue'),
+        meta: { public: false, role: ['super', 'admin'] },
+      },
     ],
   },
 ]
