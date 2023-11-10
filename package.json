@@ -11,6 +11,7 @@
     "ionic:serve": "npm run serve"
   },
   "dependencies": {
+    "@aashu-dubey/capacitor-statusbar-safe-area": "^2.1.1",
     "@capacitor-community/contacts": "^5.0.4",
     "@capacitor/android": "^5.2.2",
     "@capacitor/app": "^5.0.6",
@@ -22,6 +23,7 @@
     "@capacitor/status-bar": "^5.0.6",
     "@ionic/vue": "^7.2.3",
     "@ionic/vue-router": "^7.3.2",
+    "@vueuse/core": "^10.4.1",
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
     "lodash": "^4.17.21",

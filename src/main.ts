@@ -1,8 +1,8 @@
 import { IonicVue } from '@ionic/vue'
 import { StatusBar, Style } from '@capacitor/status-bar'
 import VueSweetalert2 from 'vue-sweetalert2'
-// import axios from 'axios'
 import { createApp } from 'vue'
+import { SafeAreaController } from '@aashu-dubey/capacitor-statusbar-safe-area'
 import App from './App.vue'
 import router from './routes'
 import store from './store/'
@@ -39,7 +39,8 @@ app.use(VueSweetalert2)
 
 // await StatusBar.setOverlaysWebView({ overlay: true })
 // await StatusBar.setStyle({ style: Style.Light })
+SafeAreaController.injectCSSVariables()
 
 router.isReady().then(() => {
-  app.mount('#app')
+   app.mount('#app')
 })

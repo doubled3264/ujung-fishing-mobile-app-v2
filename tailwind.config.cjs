@@ -980,6 +980,18 @@ module.exports = {
             'jet-stream': '#afd2c4',
             'green-sheen': '#72b292',
             'dark-sea-green': '#83b99c',
+            'cyan-cobalt-blue': {
+               normal: '#345DA7',
+            },
+            'cyan-azure-blue': {
+               normal: '#3B8AC4',
+            },
+            'picton-blue': {
+               normal: '#4AB4DE',
+            },
+            'azureish-white': {
+               normal: '#DEF3F6',
+            },
             verdi: {
                normal: '#41c3a9',
                hover: '#3aaf89',

@@ -5,7 +5,8 @@
 
          & > .title {
             h3 {
-               @apply text-4xl font-bold capitalize text-lapis-lazuli-normal;
+               // @apply text-4xl font-bold capitalize text-lapis-lazuli-normal;
+               @apply text-4xl font-bold capitalize text-cyan-azure-blue-normal;
                @apply text-center;
             }
          }
@@ -15,7 +16,7 @@
             @apply mx-10 mt-16;
 
             .submit-button {
-              @apply w-full mt-6;
+               @apply w-full mt-6;
             }
          }
       }

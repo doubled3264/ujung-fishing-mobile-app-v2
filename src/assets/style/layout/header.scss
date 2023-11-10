@@ -1,6 +1,7 @@
 .home-page {
    ion-header {
-      @apply mt-9;
+      // @apply mt-9;
+      margin-top: var(--status-bar-height);
       @apply border-b border-gray-50;
       @apply shadow-sm #{!important};
 
