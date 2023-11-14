@@ -1,15 +1,16 @@
 @mixin header {
-      @apply mt-9;
-      @apply border-b border-gray-50;
-      @apply shadow-sm #{!important};
+   // @apply mt-9;
+   margin-top: var(--status-bar-height);
+   @apply border-b border-gray-50;
+   @apply shadow-sm #{!important};
 
-      ion-toolbar {
-         --background: #fff;
-         @apply text-gray-500;
-         ion-title {
-            @apply px-1;
-            @apply capitalize text-gray-600;
-         }
+   ion-toolbar {
+      --background: #fff;
+      // --padding-start: 20px;
+      @apply text-gray-500;
+      ion-title {
+         // @apply px-1;
+         @apply capitalize text-gray-600;
       }
-
+   }
 }

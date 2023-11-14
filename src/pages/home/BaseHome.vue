@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IonPage, IonButton, onIonViewWillEnter } from '@ionic/vue'
+import { IonPage, IonButtons, IonButton, onIonViewWillEnter } from '@ionic/vue'
 import { SafeArea } from '@aashu-dubey/capacitor-statusbar-safe-area'
 import { burgerMenu2 } from '../../utils/svg'
 import { useToggleComponent } from '../../composable/toggle-show-hide-component'
@@ -22,11 +22,11 @@ onIonViewWillEnter(async () => {
     <custom-page-reload />
     <custom-header title="Home">
       <template #nav-end>
-        <ion-button>
+        <ion-buttons>
           <ion-button @click="modalMainMenuState.toggling">
-            <custom-icon :svg-icon="burgerMenu2" width="24"></custom-icon>
+            <custom-icon :svg-icon="burgerMenu2"></custom-icon>
           </ion-button>
-        </ion-button>
+        </ion-buttons>
       </template>
     </custom-header>
     <custom-modal-main-menu :is-open="modalMainMenuState.isOpen.value" @close-modal="modalMainMenuState.toggling" />

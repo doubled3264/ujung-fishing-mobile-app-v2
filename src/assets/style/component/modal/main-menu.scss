@@ -4,23 +4,23 @@
    @include header;
    &__inner {
       // @apply mt-3 pl-3.5;
-      @apply mt-3;
+      @apply mt-3 ml-3.5;
 
       h3 {
-         @apply ml-3.5;
-         @apply text-xl font-semibold capitalize text-gray-600;
+         // @apply ml-3.5;
+         @apply text-xl font-semibold capitalize text-gray-500;
       }
 
       ion-item {
          --padding-start: 0px;
-         --inner-padding-start: 14px;
+         // --inner-padding-start: 14px;
          --color-hover: rgb(107 114 128);
          --background-hover: none;
          @apply text-gray-500;
 
          ion-label {
             @apply pl-3.5;
-            @apply capitalize;
+            @apply text-base capitalize #{!important};
          }
       }
    }

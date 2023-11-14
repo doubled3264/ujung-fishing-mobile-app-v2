@@ -8,7 +8,7 @@ interface Props {
 defineProps<Props>()
 </script>
 <template>
-   <ion-header class="ion-no-border">
+   <ion-header class="">
       <ion-toolbar>
          <ion-title v-if="title">{{ title }}</ion-title>
          <ion-buttons slot="start">
